@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .head {
+        background-image: url();
+        background-repeat: no-repeat;
+        background-position: 10px 0;
+        background-size: 140px;
+        background-color: rgb(16, 4, 36);
+        color: rgb(130, 110, 19);
+        display: flex;
+        flex-wrap: nowrap; 
+        font-size: 25px;
+        padding: 15px;
+        margin: 0;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .loc{
+    background-color:#c0a159;
+    color:rgb(16, 4, 36);
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    font-size: 16px;
+    background-size: 75px;
+}
+    .nav{
+        display: flex;
+        font-size: 20px;
+        justify-content: right;
+        
+    }
+    .li{
+        display: inline-block;
+
+    }
+    .li a{
+        padding:0 18px;
+        font-size:1em;
+        font-weight: 500;
+        color:rgb(130, 110, 19) ;
+        text-decoration: none;
+        transition: .6s;
+    }
+    .li a:hover{
+        background-color: rgb(130, 110, 19);
+        color: white;
+        padding: 0  20px ;
+        
+    }
+   .m1{ display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding: 2px;
+    letter-spacing: 2px;
+    color:rgb(130, 110, 19);
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.6s;
+    border-radius: 0;
+    border-style:solid ;
+    border-left: transparent;
+    border-right: transparent;
+    border-color: rgb(130, 110, 19);
+    border-width:2px ;
+}
+.m1:hover{
+    background-color: rgb(130, 110, 19);
+    color: white;
+    padding: 0  20px ;
+}
+
+    
+    body{
+        background-image:url(project.jpg);
+    }
+    .menunav{
+        background-image:url(project.jpg);
+        display: flex;
+        color: #c0a159;
+        justify-content: center;
+        height: 100px;
+        letter-spacing: 3px;
+        font-size: 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mnav{
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+
+    }
+    .mli{
+    display: inline-block;
+    border-radius: 0;
+    border-style:solid ;
+    padding: 0.5rem 1.65rem 0.5rem 1.65rem;
+    border-left: transparent;
+    border-right: transparent;
+    border-color: rgb(130, 110, 19);
+    border-width:2px ;
+    }
+    .mli a{
+        padding:0 18px;
+        font-size:1em;
+        font-weight: 500;
+        color:rgb(130, 110, 19) ;
+        text-decoration: none;
+        transition: 0.6s;
+        
+    }
+    .mli a:hover{
+        background-color: rgb(130, 110, 19);
+        color: white;
+        padding: 0  30px ;
+
+    }
+    .italy{
+        margin: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .Japanese{
+        margin: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .food{
+    background-image: url();
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-align: center;
+    }
+
+    .food1{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    }
+    .foodinfo{
+        padding: 10px;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .cart{
+        padding: 10px;
+        font-size: 20px;
+        border: #c0a159 solid 4px;
+        background-color: rgb(16, 4, 36);
+        text-decoration: none;
+        color: #c0a159;
+        transition: 0.6s;
+    }
+    .cart:hover{
+        background-color: goldenrod;
+       color: rgb(16, 4, 36);
+    }
+
+
+</style>
+<body style="margin: 0px;">
+    <div class="loc">
+        <a class="loc" href="#"> St W, HYDERBAD, ON M5J 1E3 416-368-2511</a>
+
+</div>
+<div>
+    <header class="head">
+        <h2>
+            Velvet Ember
+        </h2>
+    
+        
+    <nav class="nav">
+        <ul class="ul">
+        <li class="li"><a href="project.html" >Home</a></li>
+        <li class="li"><a class="m1" href="#menus" >menus</a></li>
+        <li class="li"><a href="p2.html">bar</a></li>
+        <li class="li"><a href="p3.html">bakery</a></li>
+        <li class="li"><a href="p4.html">Private Dining</a></li>
+        <li class="li"><a href="#">About</a></li>
+        <li class="li"><a href="Reservation.html">Reservation </a></li>
+        </ul>
+    </nav>
+</header>
+<div class="menunav">
+    <h2>
+        MENUS
+    </h2>
+</div>
+<nav class="mnav">
+    <ul class="ul">
+    <li class="mli"><a href="#italy" >Italian</a></li>
+    <li class="mli"><a href="#Japanese">Japanese</a></li>
+    <li class="mli"><a href="#Mexican">Mexican </a></li>
+    <li class="mli"><a href="#France">France </a></li>
+    <li class="mli"><a href="#Arabian">Arabian</a></li>
+    <li class="mli"><a href="#Indian">Indian </a></li>
+    </ul>
+</nav>
+<div id="italy" ><h1 style="text-align: center; color: #c0a159;">Italian Menu</h1>
+<div  class="italy">
+<div class="food">
+    <img src="lasanga.jpg" alt="lasania" class="food1">
+    <div class="foodinfo">
+    <h3>
+        Lasagna
+    </h3>
+    <p>
+        Layered pasta with meat, cheese, and tomato sauce.
+    </p>
+    <p><b>$49.99</b></p>
+    <div>
+        <input class="cart" type="submit" value="Add to cart">
+    </div>
+     </div>
+</div>
+<div class="food">
+    <img src="pizza.jpg" alt="Pizza Margherita" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Pizza Margherita
+    </h3>
+    <p>
+        Classic pizza topped with tomato, mozzarella, and basil.
+    </p>
+    <p><b>$24.99</b></p>
+    <div>
+        <input class="cart" type="submit" value="Add to cart">
+    </div>
+     </div>
+</div>
+<div class="food">
+    <img src="rassito.jpg" alt="Risotto" class="food1">
+
+
+     <div class="foodinfo">
+    <h3>
+        Risotto
+    </h3>
+    <p>
+        Creamy rice dish cooked with broth and various ingredients.
+    </p>
+    <p><b>$89.99</b></p>
+    <div>
+        <input class="cart" type="submit" value="Add to cart">
+    </div>
+     </div>
+</div>
+
+<div class="food">
+    <img src="pasta.jpg" alt="Pasta Carbonara" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Pasta Carbonara
+    </h3>
+    <p>
+        Pasta with egg, cheese, pancetta, and pepper.
+    </p>
+    <p><b>$59.99</b></p>
+    <div>
+        <input class="cart" type="submit" value="Add to cart">
+    </div>
+     </div>
+</div>
+<div class="food">
+    <img src="tiramasu.jpg" alt="Tiramisu" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Tiramisu
+    </h3>
+    <p>
+        A coffee-flavored dessert made with mascarpone, ladyfingers, and cocoa.
+    </p>
+    <p><b>$59.99</b></p>
+    <div>
+        <input class="cart" type="submit" value="Add to cart">
+    </div>
+     </div>
+</div>
+<div class="food">
+    <img src="gnocchi.jpg" alt="Gnocchi" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Gnocchi
+    </h3>
+    <p>
+        Soft, doughy pasta made from potatoes.
+    </p>
+    <p><b>$59.99</b></p>
+    <div>
+        <input class="cart" type="submit" value="Add to cart">
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="Japanese"><h1 style="text-align: center; color: #c0a159;">Japanese Menu</h1>
+<div class="Japanese">
+<div class="food">
+    <img src="sushi.jpg" alt="Sushi" class="food1">
+    <div class="foodinfo">
+    <h3>
+        Sushi
+    </h3>
+    <p>
+        Vinegared rice paired with raw fish or vegetables.
+    </p>
+    <p><b>$49.99</b></p>
+     </div>
+</div>
+<div class="food">
+    <img src="ramen.jpg" alt="Ramen" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Ramen
+    </h3>
+    <p>
+        Noodle soup with broth, meat, and vegetables.
+    </p>
+    <p><b>$99.99</b></p>
+     </div>
+</div>
+<div class="food">
+    <img src="tempura.jpg" alt="Tempura" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Tempura
+    </h3>
+    <p>
+        Batter-fried seafood or vegetables.
+    </p>
+    <p><b>$89.99</b></p>
+     </div>
+</div>
+
+
+
+
+
+<div id="Mexican"><h1 style="text-align: center; color: #c0a159;">Mexican Menu</h1>
+<div class="Japanese">
+<div class="food">
+    <img src="tyacos.jpg" alt="Tacos" class="food1">
+    <div class="foodinfo">
+    <h3>
+        Tacos
+    </h3>
+    <p>
+        Soft or hard tortillas filled with meat, beans, cheese, and vegetables.
+    </p>
+    <p><b>$49.99</b></p>
+     </div>
+</div>
+<div class="food">
+    <img src="enni.jpg" alt="Enchiladas" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Enchiladas
+    </h3>
+    <p>
+        Tortillas rolled around a filling, covered with sauce.
+    </p>
+    <p><b>$99.99</b></p>
+     </div>
+</div>
+<div class="food">
+    <img src="gua.jpg" alt="Guacamole" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Guacamole
+    </h3>
+    <p>
+        Mashed avocado dip with lime, onions, tomatoes, and cilantro.
+    </p>
+    <p><b>$89.99</b></p>
+     </div>
+</div>
+
+<div class="food">
+    <img src="tama.jpg" alt="Tamales" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Tamales
+    </h3>
+    <p>
+        Corn dough filled with meats or vegetables, wrapped in corn husks.
+    </p>
+    <p><b>$29.99</b></p>
+     </div>
+</div>
+<div class="food">
+    <img src="chilles.jpg" alt="Chiles" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Chiles Rellenos
+    </h3>
+    <p>
+        Stuffed chili peppers, usually with cheese or meat.
+    </p>
+    <p><b>$89.99</b></p>
+     </div>
+</div>
+<div class="food">
+    <img src="quaa.jpg" alt="Quesadillas" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Quesadillas
+    </h3>
+    <p>
+        Tortillas filled with cheese, grilled or pan-fried.
+    </p>
+    <p><b>$79.99</b></p>
+     </div>
+</div>
+</div>
+</div>
+
+
+<div id="France" ><h1 style="text-align: center; color: #c0a159;">France Menu</h1>
+<div  class="Japanese">
+<div class="food">
+    <img src="rout.jpg" alt="Ratatouille" class="food1">
+    <div class="foodinfo">
+    <h3>
+        Ratatouille
+    </h3>
+    <p>
+        Stewed vegetables, including eggplant, zucchini, and tomatoes.
+    </p>
+    <p><b>$49.99</b></p>
+     </div>
+</div>
+<div class="food">
+    <img src="cross.jpg" alt="Croissants" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Croissants
+    </h3>
+    <p>
+        Buttery, flaky pastries.
+    </p>
+    <p><b>$99.99</b></p>
+     </div>
+</div>
+
+<div class="food">
+    <img src="lumm.jpg" alt=" Quiche Lorraine" class="food1">
+
+     <div class="foodinfo">
+    <h3>
+        Quiche Lorraine 
+    </h3>
+    <p>
+        Savory pie with eggs, cream, cheese, and bacon.
+    </p>
+    <p><b>$29.99</b></p>
+     </div>
+</div>
+
+
+</div>
+</div>
+
+
+<div id="Arabian" ><h1 style="text-align: center; color: #c0a159;">Arabian Menu</h1>
+    <div  class="Japanese">
+    
+    <div class="food">
+        <img src="tyacos.jpg" alt="Croissants" class="food1">
+    
+         <div class="foodinfo">
+        <h3>
+            Jareesh
+        </h3>
+        <p>
+            Cracked wheat porridge with meat, spices, and sometimes yogurt.
+        </p>
+        <p><b>$99.99</b></p>
+         </div>
+    </div>
+    <div class="food">
+        <img src="tama.jpg" alt="Bouillabaisse" class="food1">
+    
+         <div class="foodinfo">
+        <h3>
+            Mandi
+        </h3>
+        <p>
+            Slow-cooked lamb or chicken with fragrant rice
+        </p>
+        <p><b>$89.99</b></p>
+         </div>
+    </div>
+    
+    <div class="food">
+        <img src="ramen.jpg" alt=" Quiche Lorraine" class="food1">
+    
+         <div class="foodinfo">
+        <h3>
+            Mutabbaq
+        </h3>
+        <p>
+            Stuffed flatbread with meat, vegetables, or egg.
+        </p>
+        <p><b>$29.99</b></p>
+         </div>
+    </div>
+    
+    
+    </div>
+    </div>
+
+
+    <div id="Indian" ><h1 style="text-align: center; color: #c0a159;">Indian Menu</h1>
+        <div  class="Japanese">
+        <div class="food">
+            <img src="biry.jpg" alt="Ratatouille" class="food1">
+            <div class="foodinfo">
+            <h3>
+                Biryani
+            </h3>
+            <p>
+                Spiced rice dish cooked with meat (like chicken or lamb) and herbs.
+            </p>
+            <p><b>$49.99</b></p>
+             </div>
+        </div>
+        <div class="food">
+            <img src="butt.jpg" alt="Croissants" class="food1">
+        
+             <div class="foodinfo">
+            <h3>
+                Butter Chicken
+            </h3>
+            <p>
+                Creamy tomato-based curry with tender chicken pieces.
+            </p>
+            <p><b>$99.99</b></p>
+             </div>
+        </div>
+        <div class="food">
+            <img src="tand.jpg" alt="Bouillabaisse" class="food1">
+        
+             <div class="foodinfo">
+            <h3>
+                Tandoori Chicken 
+            </h3>
+            <p>
+                Roasted chicken marinated in yogurt and spices.
+            </p>
+            <p><b>$89.99</b></p>
+             </div>
+        </div>
+        
+        <div class="food">
+            <img src="butt.jpg" alt=" Quiche Lorraine" class="food1">
+        
+             <div class="foodinfo">
+            <h3>
+                Paneer Tikka
+            </h3>
+            <p>
+             Grilled paneer (Indian cheese) marinated in spices
+            </p>
+            <p><b>$29.99</b></p>
+             </div>
+        </div>
+        <div class="food">
+            <img src="biry.jpg" alt="Crêpes" class="food1">
+        
+             <div class="foodinfo">
+            <h3>
+                Gulab Jamun
+            </h3>
+            <p>
+                Deep-fried dough balls soaked in sugary syrup.
+            </p>
+            <p><b>$89.99</b></p>
+             </div>
+        </div>
+        <div class="food">
+            <img src="tand.jpg" alt="Tarte Tatin " class="food1">
+        
+             <div class="foodinfo">
+            <h3>
+                Rogan Josh
+            </h3>
+            <p>
+                Aromatic lamb curry from Kashmir.
+            </p>
+            <p><b>$79.99</b></p>
+             </div>
+        </div>
+        </div>
+        </div>
+</body>
+</html>
